@@ -1,4 +1,4 @@
-# Ex01 Django ORM Web Application
+# EX:01 Django ORM Web Application
 ## DATE: 
 3/12/2025
 ## AIM
