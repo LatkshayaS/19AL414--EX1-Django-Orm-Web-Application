@@ -36,11 +36,25 @@ Execute Django admin using localhost and create details for 10 entries
 
 ## PROGRAM
 
+```
 
+from django.db import models
+
+class Employee(models.Model):
+    eid = models.CharField(max_length=20, primary_key=True, help_text="Employee ID")
+    name = models.CharField(max_length=100, help_text="Employee Name")
+    salary = models.IntegerField(help_text="Salary")
+    age = models.IntegerField(help_text="Age")
+    email = models.EmailField(help_text="Email")
+
+    def __str__(self):
+        return f"{self.eid} - {self.name}"
+
+```
 
 ## OUTPUT
 
-
+![](orm.png)
 
 ## RESULT
 Thus the program for creating E-commerce website database using ORM hass been executed successfully
